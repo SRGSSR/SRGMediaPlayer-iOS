@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9c-I7-8ft">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9c-I7-8ft">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -108,7 +106,7 @@
                                 <rect key="frame" x="6" y="762" width="402" height="94"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-Dg-mkD" customClass="SRGTimeSlider">
-                                        <rect key="frame" x="14" y="10" width="374" height="31"/>
+                                        <rect key="frame" x="14" y="10" width="374" height="17"/>
                                         <color key="minimumTrackTintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="maximumTrackTintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -122,7 +120,7 @@
                                             <outlet property="valueLabel" destination="cyE-ky-Dbl" id="r0i-6M-RFv"/>
                                         </connections>
                                     </slider>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8o-E5-scK" customClass="SRGAirPlayButton">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8o-E5-scK" customClass="SRGAirPlayButton">
                                         <rect key="frame" x="10" y="48" width="30" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,21 +152,21 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyE-ky-Dbl">
-                                        <rect key="frame" x="16" y="46" width="31.666666666666671" height="13.333333333333336"/>
+                                        <rect key="frame" x="16" y="31.999999999999996" width="31.666666666666671" height="13.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erw-ST-7Yg">
-                                        <rect key="frame" x="354.33333333333331" y="46" width="31.666666666666686" height="13.333333333333336"/>
+                                        <rect key="frame" x="354.33333333333331" y="31.999999999999996" width="31.666666666666686" height="13.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="omh-tb-D23">
-                                        <rect key="frame" x="10" y="42.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="10" y="28.666666666666629" width="20" height="20"/>
                                     </activityIndicatorView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-AE-54i" customClass="SRGTracksButton">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-AE-54i" customClass="SRGTracksButton">
                                         <rect key="frame" x="368" y="54" width="18" height="18"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -200,6 +198,13 @@
                                     <constraint firstItem="xRb-AE-54i" firstAttribute="centerY" secondItem="gL8-ry-Lc7" secondAttribute="centerY" id="w96-Y4-f9q"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I0i-j2-etx">
+                                <rect key="frame" x="93.333333333333329" y="620" width="227.33333333333337" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Hfa-Tw-snn"/>
+                                    <constraint firstAttribute="width" secondItem="I0i-j2-etx" secondAttribute="height" multiplier="16:9" id="ZNO-Za-NHn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -220,9 +225,11 @@
                             <constraint firstItem="bHB-EG-K8u" firstAttribute="bottom" secondItem="bLY-wi-w8n" secondAttribute="bottom" id="QiL-20-a9a"/>
                             <constraint firstItem="MoS-P5-AUe" firstAttribute="trailing" secondItem="bLY-wi-w8n" secondAttribute="trailing" constant="6" id="Rka-ri-mtZ"/>
                             <constraint firstItem="Nio-gG-HwI" firstAttribute="centerX" secondItem="CjI-bJ-s74" secondAttribute="centerX" id="ZEy-1Z-qj9"/>
+                            <constraint firstItem="I0i-j2-etx" firstAttribute="centerX" secondItem="MoS-P5-AUe" secondAttribute="centerX" id="bnd-Ux-4v2"/>
                             <constraint firstItem="CNH-y9-cf6" firstAttribute="centerY" secondItem="CjI-bJ-s74" secondAttribute="centerY" id="dJm-jV-mFd"/>
                             <constraint firstAttribute="trailing" secondItem="CjI-bJ-s74" secondAttribute="trailing" id="dOA-eT-QYB"/>
                             <constraint firstItem="MoS-P5-AUe" firstAttribute="bottom" secondItem="bLY-wi-w8n" secondAttribute="bottom" constant="6" id="kYE-Fq-6NS"/>
+                            <constraint firstItem="bHB-EG-K8u" firstAttribute="top" secondItem="I0i-j2-etx" secondAttribute="bottom" constant="14" id="pUa-Ub-vsB"/>
                             <constraint firstAttribute="bottom" secondItem="CjI-bJ-s74" secondAttribute="bottom" id="rN0-Dn-k5i"/>
                             <constraint firstItem="nE5-wI-3P2" firstAttribute="trailing" secondItem="t46-Ek-i6i" secondAttribute="trailing" id="tSI-ey-OxO"/>
                             <constraint firstItem="bLY-wi-w8n" firstAttribute="leading" secondItem="MoS-P5-AUe" secondAttribute="leading" constant="6" id="vND-cI-OXG"/>
@@ -235,6 +242,7 @@
                         <outlet property="loadingActivityIndicatorView" destination="omh-tb-D23" id="0RR-Fj-jAA"/>
                         <outlet property="mediaPlayerController" destination="VVd-hK-4fU" id="0Bo-Z5-T5P"/>
                         <outlet property="playbackButton" destination="gL8-ry-Lc7" id="3zL-W9-EFU"/>
+                        <outlet property="seekPreviewImageView" destination="I0i-j2-etx" id="SYl-K0-k1p"/>
                         <outlet property="skipBackwardButton" destination="BRy-c9-UCc" id="3Ma-UP-5OT"/>
                         <outlet property="skipForwardButton" destination="3vg-6i-6jj" id="IeR-Xc-7O4"/>
                         <outlet property="timeSlider" destination="EKV-Dg-mkD" id="lX0-ar-Fzm"/>

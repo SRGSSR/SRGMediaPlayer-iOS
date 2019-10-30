@@ -744,6 +744,18 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 /**
+ *  Preview image retrieval.
+ */
+@interface SRGMediaPlayerController (PreviewImages)
+
+/**
+ *  Returns the best preview image available for the specified time, if available.
+ */
+- (nullable UIImage *)previewImageAtTime:(CMTime)time;
+
+@end
+
+/**
  *  AirPlay. Use player lifecycle blocks (see main `SRGMediaPlayerController` documentation) to setup AirPlay behavior.
  *  Your audio session settings must be compatible with AirPlay, see
  *      https://developer.apple.com/library/content/qa/qa1803/_index.html
